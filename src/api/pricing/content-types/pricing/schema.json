@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pricings",
+  "info": {
+    "singularName": "pricing",
+    "pluralName": "pricings",
+    "displayName": "Pricing",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Unit": {
+      "type": "biginteger"
+    },
+    "Price": {
+      "type": "decimal"
+    },
+    "pricing_subs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pricing-sub.pricing-sub"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news",
+  "info": {
+    "singularName": "new",
+    "pluralName": "news",
+    "displayName": "News",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "ShortDescription": {
+      "type": "text"
+    },
+    "news_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::news-category.news-category"
+    }
+  }
+}

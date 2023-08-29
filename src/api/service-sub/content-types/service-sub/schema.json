@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "service_subs",
+  "info": {
+    "singularName": "service-sub",
+    "pluralName": "service-subs",
+    "displayName": "Service Sub",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Ttile": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "service": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::service.service"
+    }
+  }
+}

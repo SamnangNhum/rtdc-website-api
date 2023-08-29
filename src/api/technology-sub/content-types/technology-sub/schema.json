@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "technology_subs",
+  "info": {
+    "singularName": "technology-sub",
+    "pluralName": "technology-subs",
+    "displayName": "Technology Sub",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "technology": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::technology.technology"
+    }
+  }
+}
