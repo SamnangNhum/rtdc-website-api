@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_careers",
+  "info": {
+    "singularName": "about-career",
+    "pluralName": "about-careers",
+    "displayName": "About Career",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Position": {
+      "type": "string"
+    },
+    "Location": {
+      "type": "string"
+    },
+    "CloseDate": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "about_us_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::about-us-category.about-us-category"
+    },
+    "NumberOfPosition": {
+      "type": "integer"
+    }
+  }
+}
