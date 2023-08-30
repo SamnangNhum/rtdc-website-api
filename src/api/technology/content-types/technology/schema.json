@@ -43,10 +43,11 @@
         "audios"
       ]
     },
-    "technology_subs": {
+    "technology_category": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::technology-sub.technology-sub"
+      "relation": "manyToOne",
+      "target": "api::technology-category.technology-category",
+      "inversedBy": "technologies"
     }
   }
 }
