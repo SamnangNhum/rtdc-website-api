@@ -24,10 +24,11 @@
     "Price": {
       "type": "decimal"
     },
-    "pricing_subs": {
+    "pricing_category": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::pricing-sub.pricing-sub"
+      "relation": "manyToOne",
+      "target": "api::pricing-category.pricing-category",
+      "inversedBy": "pricings"
     }
   }
 }
