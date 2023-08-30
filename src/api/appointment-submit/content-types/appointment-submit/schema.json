@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "appointment_submits",
+  "info": {
+    "singularName": "appointment-submit",
+    "pluralName": "appointment-submits",
+    "displayName": "Appointment Submit",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "PhoneNumber": {
+      "type": "string"
+    },
+    "Date": {
+      "type": "datetime"
+    },
+    "Dentist": {
+      "type": "string"
+    }
+  }
+}

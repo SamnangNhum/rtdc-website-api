@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dentists",
+  "info": {
+    "singularName": "dentist",
+    "pluralName": "dentists",
+    "displayName": "Dentist",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Position": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    }
+  }
+}
