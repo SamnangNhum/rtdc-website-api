@@ -12,11 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "Name_of_service_kh": {
       "type": "string"
     },
-    "Description": {
-      "type": "text"
+    "Name_of_service_en": {
+      "type": "string"
     },
     "Unit": {
       "type": "biginteger"
@@ -29,6 +29,9 @@
       "relation": "manyToOne",
       "target": "api::pricing-category.pricing-category",
       "inversedBy": "pricings"
+    },
+    "Other": {
+      "type": "string"
     }
   }
 }
