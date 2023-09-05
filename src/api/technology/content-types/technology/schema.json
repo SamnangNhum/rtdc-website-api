@@ -18,9 +18,6 @@
     "Meta": {
       "type": "string"
     },
-    "Description": {
-      "type": "richtext"
-    },
     "Thumbnail": {
       "type": "media",
       "multiple": true,
@@ -48,6 +45,13 @@
       "relation": "manyToOne",
       "target": "api::technology-category.technology-category",
       "inversedBy": "technologies"
+    },
+    "Description": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbarBaloon"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }
