@@ -37,6 +37,18 @@
       "relation": "oneToMany",
       "target": "api::pricing.pricing",
       "mappedBy": "pricing_category"
+    },
+    "Thumbnail": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
