@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "pricing_categories",
+  "collectionName": "question_answer_categories",
   "info": {
-    "singularName": "pricing-category",
-    "pluralName": "pricing-categories",
-    "displayName": "Pricing Category",
-    "description": ""
+    "singularName": "question-answer-category",
+    "pluralName": "question-answer-categories",
+    "displayName": "Question Answer Category"
   },
   "options": {
     "draftAndPublish": true
@@ -17,26 +16,28 @@
   },
   "attributes": {
     "Title": {
-      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "Description": {
-      "type": "text",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "type": "text"
     },
-    "pricings": {
+    "question_answers": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::pricing.pricing",
-      "mappedBy": "pricing_category"
+      "target": "api::question-answer.question-answer",
+      "mappedBy": "question_answer_category"
     }
   }
 }
