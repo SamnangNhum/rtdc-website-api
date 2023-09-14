@@ -4,7 +4,8 @@
   "info": {
     "singularName": "clinical-result",
     "pluralName": "clinical-results",
-    "displayName": "Clinical Result"
+    "displayName": "Clinical Result",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,11 +16,12 @@
       "type": "string"
     },
     "Thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Description": {
       "type": "customField",
@@ -29,17 +31,21 @@
       "customField": "plugin::ckeditor5.CKEditor"
     },
     "Gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "videos",
         "audios",
         "files"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "PostedOn": {
       "type": "date"
+    },
+    "Meta": {
+      "type": "text"
     }
   }
 }
