@@ -15,8 +15,23 @@
     "Title": {
       "type": "string"
     },
+    "Thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
     "Description": {
-      "type": "richtext"
+      "type": "customField",
+      "options": {
+        "preset": "toolbarBaloon"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
     },
     "Gallery": {
       "type": "media",
@@ -28,6 +43,9 @@
         "videos",
         "audios"
       ]
+    },
+    "PostedOn": {
+      "type": "date"
     }
   }
 }
