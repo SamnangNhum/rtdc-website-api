@@ -50,12 +50,6 @@
         "preset": "toolbarBaloon"
       },
       "customField": "plugin::ckeditor5.CKEditor"
-    },
-    "question_answer_category": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::question-answer-category.question-answer-category",
-      "inversedBy": "question_answers"
     }
   }
 }
