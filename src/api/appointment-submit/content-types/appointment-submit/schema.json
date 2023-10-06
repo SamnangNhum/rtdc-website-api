@@ -19,10 +19,13 @@
       "type": "string"
     },
     "Date": {
-      "type": "datetime"
+      "type": "date"
     },
-    "Dentist": {
+    "Services": {
       "type": "string"
+    },
+    "AdditionalInformation": {
+      "type": "text"
     }
   }
 }
