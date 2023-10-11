@@ -43,6 +43,9 @@
     },
     "PostedOn": {
       "type": "date"
+    },
+    "Meta": {
+      "type": "text"
     }
   }
 }
