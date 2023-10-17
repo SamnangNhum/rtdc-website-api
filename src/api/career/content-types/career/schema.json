@@ -16,7 +16,7 @@
     }
   },
   "attributes": {
-    "Position": {
+    "title": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -49,6 +49,18 @@
         }
       },
       "type": "date"
+    },
+    "Slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "customField",
+      "options": {
+        "pattern": "title"
+      },
+      "customField": "plugin::slug.slug"
     }
   }
 }
