@@ -76,6 +76,18 @@
         "preset": "toolbarBaloon"
       },
       "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "Slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "customField",
+      "options": {
+        "pattern": "title"
+      },
+      "customField": "plugin::slug.slug"
     }
   }
 }

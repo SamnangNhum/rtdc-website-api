@@ -22,7 +22,9 @@
           "localized": true
         }
       },
-      "type": "string"
+      "type": "string",
+      "unique": true,
+      "required": true
     },
     "Location": {
       "pluginOptions": {
