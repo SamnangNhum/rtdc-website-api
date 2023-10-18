@@ -68,6 +68,12 @@
         }
       },
       "type": "integer"
+    },
+    "pricings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::pricing.pricing",
+      "mappedBy": "service_category"
     }
   }
 }
