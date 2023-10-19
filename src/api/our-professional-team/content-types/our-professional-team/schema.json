@@ -60,7 +60,7 @@
       },
       "customField": "plugin::ckeditor5.CKEditor"
     },
-    "Name": {
+    "title": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -99,6 +99,18 @@
         }
       },
       "type": "integer"
+    },
+    "Slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "customField",
+      "options": {
+        "pattern": "title"
+      },
+      "customField": "plugin::slug.slug"
     }
   }
 }
