@@ -12,8 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "string"
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "Thumbnail": {
       "type": "media",
@@ -46,6 +48,13 @@
     },
     "Meta": {
       "type": "text"
+    },
+    "Slug": {
+      "type": "customField",
+      "options": {
+        "pattern": "title"
+      },
+      "customField": "plugin::slug.slug"
     }
   }
 }
