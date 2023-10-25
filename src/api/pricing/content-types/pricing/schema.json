@@ -60,6 +60,14 @@
       "relation": "manyToOne",
       "target": "api::service-category.service-category",
       "inversedBy": "pricings"
+    },
+    "PriceRange": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }
