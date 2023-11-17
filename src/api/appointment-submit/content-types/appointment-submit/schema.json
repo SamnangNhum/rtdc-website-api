@@ -12,8 +12,9 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
-      "type": "string"
+    "FirstName": {
+      "type": "string",
+      "required": true
     },
     "PhoneNumber": {
       "type": "string"
@@ -26,6 +27,16 @@
     },
     "AdditionalInformation": {
       "type": "text"
+    },
+    "Doctor": {
+      "type": "text"
+    },
+    "LastName": {
+      "type": "string",
+      "required": true
+    },
+    "Location": {
+      "type": "string"
     }
   }
 }
