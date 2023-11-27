@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_submits",
+  "info": {
+    "singularName": "contact-submit",
+    "pluralName": "contact-submits",
+    "displayName": "Contact Submit",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subject": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    }
+  }
+}
