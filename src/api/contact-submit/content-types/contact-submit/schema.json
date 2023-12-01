@@ -20,6 +20,9 @@
     },
     "phoneNumber": {
       "type": "string"
+    },
+    "message": {
+      "type": "text"
     }
   }
 }
