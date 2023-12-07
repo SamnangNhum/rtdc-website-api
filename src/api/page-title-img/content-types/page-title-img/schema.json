@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_title_imgs",
+  "info": {
+    "singularName": "page-title-img",
+    "pluralName": "page-title-imgs",
+    "displayName": "PageTitleImg"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Slug": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
