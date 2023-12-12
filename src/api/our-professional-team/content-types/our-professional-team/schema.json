@@ -124,7 +124,7 @@
       },
       "customField": "plugin::ckeditor5.CKEditor"
     },
-    "CurriculumVitae": {
+    "Experience": {
       "pluginOptions": {
         "i18n": {
           "localized": false
