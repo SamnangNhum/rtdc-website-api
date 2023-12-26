@@ -53,6 +53,13 @@
         "pattern": "title"
       },
       "customField": "plugin::slug.slug"
+    },
+    "PageTitleImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
