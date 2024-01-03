@@ -4,18 +4,33 @@
   "info": {
     "singularName": "our-facility",
     "pluralName": "our-facilities",
-    "displayName": "Our Facility"
+    "displayName": "Our Facility",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "Title": {
-      "type": "string"
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "Meta": {
-      "type": "text"
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "Description": {
       "type": "customField",
@@ -25,24 +40,36 @@
       "customField": "plugin::ckeditor5.CKEditor"
     },
     "Thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ],
-      "type": "media",
-      "multiple": false
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "Gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ],
-      "type": "media",
-      "multiple": true
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
